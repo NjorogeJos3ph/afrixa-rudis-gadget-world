@@ -1,61 +1,38 @@
-# Afrixa × Rudis Gadget World — storefront concept
+# Afrixa × Rudis Gadget World — private concept
 
-A mobile-first, plain HTML/CSS/JavaScript storefront concept. No Node.js, npm, framework, database or build step is required.
+A mobile-first static website concept repositioning Rudis as a technology retail, security and connectivity business.
 
-## What is in this demo
-
-- Responsive landing page and catalogue
-- Search and category filters
-- Enquiry shortlist with quantities
-- Enquiry form that creates a structured WhatsApp-ready message
-- Copy-to-clipboard fallback for preview mode
-- Clear demo labels so placeholder products are not mistaken for real stock
-
-## Important: demo data only
-
-This preview is not connected to Rudis Gadget World's inventory, prices, WhatsApp account, payment provider or delivery operations. The products and images are illustrative. Do not present them as confirmed stock.
-
-Before public launch:
-
-1. Replace the six sample entries in `script.js` with the owner's actual products, photographs, model details and prices (or price-on-request).
-2. Confirm the official WhatsApp business number and set `STORE_CONFIG.whatsappNumber` in `script.js` to international digits only, for example `2547XXXXXXXX`.
-3. Confirm the business name, contact details, operating location, delivery coverage/fees, payment methods, warranty and returns policy with the owner.
-4. Replace the illustrative photographs and placeholder RGW monogram with original assets supplied or approved by the owner.
-5. Remove the `noindex,nofollow` meta tag in `index.html` when the owner approves a public launch.
-6. Test every enquiry flow on a real Android phone before sharing publicly.
-
-## Preview in Termux
-
-After extracting the folder, enter it and run:
+## Run locally (Termux)
 
 ```bash
-cd afrixa-rudis-demo
+cd ~/storage/downloads/afrixa-rudis-demo
 python -m http.server 8080
 ```
 
-Then open this address in Chrome on the same phone:
+Open `http://127.0.0.1:8080` in Chrome.
 
-```text
-http://127.0.0.1:8080
-```
-
-Stop the local server with `CTRL+C` in Termux.
-
-## GitHub
-
-Create an empty GitHub repository, then from this folder:
+## Publish update to the existing GitHub repository
 
 ```bash
-git init
 git add .
-git commit -m "Build Afrixa Rudis Gadget World demo storefront"
-git branch -M main
-git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPO.git
-git push -u origin main
+git commit -m "Reposition Rudis website around security and technology solutions"
+git push origin main
 ```
 
-To publish a static preview, enable GitHub Pages for the `main` branch and `/ (root)` in the repository's Pages settings.
+GitHub Pages should already be enabled on `main` / root. Allow the deployment to finish, then refresh the live URL.
 
-## Technical limits
+## Important verification before public launch
 
-This is a front-end sales demonstration, not a live e-commerce backend. It does not process payments, reserve stock, calculate delivery, save customer orders to a database or provide an owner dashboard. Those should be added only after the owner confirms the workflow and information required.
+- The business contact `+254790550367` is from a public business listing and social screenshot. Confirm that it is the correct WhatsApp number with Rudis before using it for live enquiries.
+- The site currently prepares WhatsApp enquiries to that number; test it before sharing.
+- Images are illustrative stock images, not Rudis project photographs.
+- Services shown are suggested from visible social content and public categories; confirm actual scope, service area, terms and availability with the owner.
+- Do not claim Starlink authorised-retailer status unless Rudis can verify it. Starlink advises customers to buy through listed authorised retailers and warns about unauthorised sellers.
+- No prices, stock, warranties, delivery promises or reviews are invented.
+
+## Files
+
+- `index.html` — page structure and copy
+- `styles.css` — responsive visual system
+- `script.js` — navigation and enquiry flow
+- `assets/rudis-gadget-world-logo.jpg` — supplied business logo

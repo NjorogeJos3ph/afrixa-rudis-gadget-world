@@ -1,193 +1,25 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="noindex,nofollow" />
-  <meta name="theme-color" content="#0b1220" />
-  <meta name="description" content="Rudis Gadget World — the official-name storefront concept by Afrixa. Browse the sample gadget catalogue and prepare product enquiries." />
-  <title>Rudis Gadget World | Afrixa</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <div class="demo-ribbon" role="note">
-    <span class="ribbon-dot"></span>
-    PRIVATE DEMO PREVIEW <span class="ribbon-divider">/</span> Product names and images are illustrative, not confirmed stock
-  </div>
-
-  <header class="site-header" id="top">
-    <div class="header-inner">
-      <a class="brand" href="#top" aria-label="Rudis Gadget World home">
-        <img class="brand-logo" src="assets/rudis-gadget-world-logo.jpg" alt="Rudis Gadget World logo" />
-        <span class="brand-copy"><strong>Rudis <em>Gadget World</em></strong><small>GADGETS · TECHNOLOGY · EVERYDAY</small></span>
-      </a>
-
-      <nav class="desktop-nav" aria-label="Main navigation">
-        <a class="active" href="#shop">Shop</a>
-        <a href="#categories">Categories</a>
-        <a href="#how-it-works">How to order</a>
-        <a href="#contact">Contact</a>
-      </nav>
-
-      <div class="header-actions">
-        <button class="icon-button search-toggle" id="focusSearch" aria-label="Focus product search" title="Search products">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 4.2 4.2"></path></svg>
-        </button>
-        <button class="bag-button" id="openBag" aria-label="Open enquiry list">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l1 12H4L5 8Z"></path><path d="M9 9V6a3 3 0 0 1 6 0v3"></path></svg>
-          <span>Enquiry list</span><b id="bagCount">0</b>
-        </button>
-        <button class="mobile-menu-button" id="mobileMenuButton" aria-label="Open navigation" aria-expanded="false">
-          <span></span><span></span>
-        </button>
-      </div>
-    </div>
-    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
-      <a href="#shop">Shop products</a><a href="#categories">Categories</a><a href="#how-it-works">How to order</a><a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <main>
-    <section class="hero section-wrap">
-      <div class="hero-copy">
-        <div class="eyebrow"><span class="eyebrow-line"></span> YOUR GADGET DESTINATION</div>
-        <h1>Good tech.<br /><span>Good choice.</span></h1>
-        <p class="hero-lead">Discover gadgets for the way you live, work and connect. Find what interests you, then enquire directly with Rudis Gadget World.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#shop">Explore the catalogue <span aria-hidden="true">↗</span></a>
-          <a class="button button-quiet" href="#how-it-works">How ordering works <span aria-hidden="true">↓</span></a>
-        </div>
-        <div class="hero-footnote"><span class="pulse-dot"></span> A simpler online home for the gadgets you discover on social media</div>
-      </div>
-
-      <div class="hero-art" aria-label="Sample gadget photography">
-        <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
-        <div class="hero-main-image">
-          <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=1100&q=82" alt="Illustrative smartphone product photograph" onerror="this.style.display='none'" />
-          <div class="image-caption"><span>THE EVERYDAY ESSENTIAL</span><strong>Smart devices. Smarter living.</strong></div>
-        </div>
-        <div class="floating-product floating-a">
-          <img src="https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?auto=format&fit=crop&w=480&q=78" alt="Illustrative wireless earbuds" onerror="this.style.display='none'" />
-          <span><small>EXPLORE</small><strong>Audio gear</strong></span>
-        </div>
-        <div class="floating-product floating-b">
-          <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=480&q=78" alt="Illustrative smartwatch" onerror="this.style.display='none'" />
-          <span><small>DISCOVER</small><strong>Wearables</strong></span>
-        </div>
-        <div class="hero-stamp"><span>AFRIXA</span><i>×</i><span>RUDIS GADGET WORLD</span></div>
-      </div>
-    </section>
-
-    <section class="quick-facts section-wrap" aria-label="Storefront features">
-      <div class="quick-fact"><span class="fact-icon">⌕</span><div><strong>Find it faster</strong><small>Search and browse by category</small></div></div>
-      <div class="quick-fact"><span class="fact-icon">◇</span><div><strong>Know what to ask</strong><small>View product details before enquiring</small></div></div>
-      <div class="quick-fact"><span class="fact-icon">↗</span><div><strong>Talk to the seller</strong><small>Prepare a direct product enquiry</small></div></div>
-    </section>
-
-    <section class="catalogue section-wrap" id="shop">
-      <div class="section-heading">
-        <div><div class="eyebrow"><span class="eyebrow-line"></span> THE CATALOGUE</div><h2>Find your next <span>favourite.</span></h2><p>Browse the sample collection. Ask Rudis Gadget World to confirm the exact model, current price and availability.</p></div>
-        <div class="catalogue-count"><strong id="resultCount">06</strong><span>sample items</span></div>
-      </div>
-
-      <div class="catalogue-tools">
-        <label class="search-box" for="productSearch">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 4.2 4.2"></path></svg>
-          <input id="productSearch" type="search" placeholder="Search phones, audio, accessories..." autocomplete="off" />
-          <kbd>/</kbd>
-        </label>
-        <div class="sort-note"><span class="sort-dot"></span> Sample collection</div>
-      </div>
-
-      <div class="category-pills" id="categoryPills" aria-label="Filter by category">
-        <button class="category-pill selected" data-category="All">All products <span>06</span></button>
-        <button class="category-pill" data-category="Phones">Phones</button>
-        <button class="category-pill" data-category="Audio">Audio</button>
-        <button class="category-pill" data-category="Wearables">Wearables</button>
-        <button class="category-pill" data-category="Power">Power</button>
-        <button class="category-pill" data-category="Computing">Computing</button>
-      </div>
-
-      <div class="product-grid" id="productGrid" aria-live="polite"></div>
-      <div class="empty-state" id="emptyState" hidden><span>⌕</span><h3>No matching sample items</h3><p>Try a different search or category.</p><button class="text-button" id="clearFilters">Clear filters ↗</button></div>
-      <p class="catalogue-disclaimer"><span>NOTE</span> This is a visual concept. Product selection, photographs, prices and availability must be replaced with Rudis Gadget World's confirmed information before launch.</p>
-    </section>
-
-    <section class="category-section" id="categories">
-      <div class="section-wrap">
-        <div class="section-heading compact-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> SHOP YOUR WAY</div><h2>What are you <span>looking for?</span></h2></div><p>Start with a category and narrow down to the item you want.</p></div>
-        <div class="category-grid">
-          <button class="category-card category-phone" data-jump-category="Phones"><span class="category-index">01 / MOBILE</span><span class="category-card-title">Phones</span><span class="category-arrow">↗</span><img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=700&q=80" alt="" loading="lazy" onerror="this.style.display='none'" /></button>
-          <button class="category-card category-audio" data-jump-category="Audio"><span class="category-index">02 / SOUND</span><span class="category-card-title">Audio</span><span class="category-arrow">↗</span><img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=700&q=80" alt="" loading="lazy" onerror="this.style.display='none'" /></button>
-          <button class="category-card category-wear" data-jump-category="Wearables"><span class="category-index">03 / EVERYDAY</span><span class="category-card-title">Wearables</span><span class="category-arrow">↗</span><img src="https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?auto=format&fit=crop&w=700&q=80" alt="" loading="lazy" onerror="this.style.display='none'" /></button>
-          <button class="category-card category-power" data-jump-category="Power"><span class="category-index">04 / POWER</span><span class="category-card-title">Power & charging</span><span class="category-arrow">↗</span><img src="https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?auto=format&fit=crop&w=700&q=80" alt="" loading="lazy" onerror="this.style.display='none'" /></button>
-        </div>
-      </div>
-    </section>
-
-    <section class="how-section section-wrap" id="how-it-works">
-      <div class="how-intro"><div class="eyebrow"><span class="eyebrow-line"></span> SIMPLE BY DESIGN</div><h2>See it.<br /><span>Ask about it.</span></h2><p>No complicated checkout in this concept. Build a list of what you like and prepare one clear enquiry for the shop.</p><a href="#shop" class="inline-link">Browse sample products <span>↗</span></a></div>
-      <div class="steps-list">
-        <article class="step"><span class="step-number">01</span><div><h3>Explore the catalogue</h3><p>Search the range and filter products to find what you need.</p></div><span class="step-symbol">⌕</span></article>
-        <article class="step"><span class="step-number">02</span><div><h3>Add items to your enquiry</h3><p>Collect several products in one list instead of sending separate messages.</p></div><span class="step-symbol">＋</span></article>
-        <article class="step"><span class="step-number">03</span><div><h3>Confirm directly with Rudis</h3><p>Ask about current price, stock, product condition, warranty and delivery before paying.</p></div><span class="step-symbol">↗</span></article>
-      </div>
-    </section>
-
-    <section class="trust-section">
-      <div class="section-wrap trust-inner">
-        <div class="trust-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M24 4 40 10v12c0 10-6.5 17.5-16 22C14.5 39.5 8 32 8 22V10L24 4Z"></path><path d="m17 24 5 5 10-11"></path></svg></div>
-        <div class="trust-copy"><div class="eyebrow">BUY WITH CLARITY</div><h2>Good decisions start with <span>good information.</span></h2><p>Before you order, confirm the exact model, condition, current price, warranty or return terms, delivery fee and payment method with the seller.</p></div>
-        <div class="trust-points"><span><i>✓</i> Confirm today's price</span><span><i>✓</i> Check stock and model</span><span><i>✓</i> Agree delivery and payment</span></div>
-      </div>
-    </section>
-
-    <section class="contact-section section-wrap" id="contact">
-      <div class="contact-card">
-        <div class="contact-content"><div class="eyebrow"><span class="eyebrow-line"></span> NEED A HAND?</div><h2>Not sure what<br />to choose?</h2><p>Tell Rudis Gadget World what you need. Ask about options, compare models and get the details before making a decision.</p><button class="button button-light" id="contactEnquiry">Prepare an enquiry <span>↗</span></button></div>
-        <div class="contact-art"><div class="contact-circle circle-large"></div><div class="contact-circle circle-small"></div><div class="contact-chat"><span class="chat-dot"></span><strong>Let's find the right gadget.</strong><small>YOUR QUESTION. THEIR ANSWER.</small></div><div class="contact-orbit-label">AFRIXA STOREFRONT CONCEPT</div></div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="section-wrap footer-main">
-      <a class="brand footer-brand" href="#top"><img class="brand-logo" src="assets/rudis-gadget-world-logo.jpg" alt="Rudis Gadget World logo" /><span class="brand-copy"><strong>Rudis <em>Gadget World</em></strong><small>GADGETS · TECHNOLOGY · EVERYDAY</small></span></a>
-      <p>A clearer way to discover gadgets and start a conversation with the shop.</p>
-      <a href="#top" class="back-top">Back to top ↑</a>
-    </div>
-    <div class="section-wrap footer-bottom"><span>© <span id="year"></span> Rudis Gadget World <small>— DEMO CONCEPT</small></span><span class="powered">A BUSINESS STOREFRONT BY <strong>AFRIXA</strong></span></div>
-  </footer>
-
-  <div class="mobile-enquiry-bar" id="mobileEnquiryBar"><span><b id="mobileBagCount">0</b> items selected</span><button id="mobileOpenBag">View enquiry list ↗</button></div>
-
-  <div class="overlay" id="overlay" hidden></div>
-  <aside class="bag-drawer" id="bagDrawer" aria-label="Enquiry list" aria-hidden="true">
-    <div class="drawer-head"><div><span class="eyebrow">YOUR SHORTLIST</span><h2>Enquiry list <span id="drawerCount">(0)</span></h2></div><button class="close-button" id="closeBag" aria-label="Close enquiry list">×</button></div>
-    <p class="drawer-intro">Collect the products you want to ask about. You can request current prices and availability in one message.</p>
-    <div class="bag-items" id="bagItems"></div>
-    <div class="bag-empty" id="bagEmpty"><span>＋</span><strong>Your list is empty</strong><p>Add a product from the sample catalogue to get started.</p><button class="button button-primary" id="continueShopping">Explore products</button></div>
-    <div class="drawer-bottom" id="drawerBottom" hidden><button class="button button-primary full-button" id="startEnquiry">Prepare my enquiry <span>↗</span></button><small>No payment is taken in this demo.</small></div>
-  </aside>
-
-  <section class="enquiry-modal" id="enquiryModal" role="dialog" aria-modal="true" aria-labelledby="enquiryTitle" hidden>
-    <div class="modal-head"><div><span class="eyebrow">TALK TO THE SHOP</span><h2 id="enquiryTitle">Prepare your enquiry</h2></div><button class="close-button" id="closeEnquiry" aria-label="Close enquiry form">×</button></div>
-    <p class="modal-intro">Add a few details so the shop can understand what you are looking for.</p>
-    <form id="enquiryForm">
-      <label>Your name <input name="name" type="text" placeholder="e.g. Alex" required /></label>
-      <div class="form-row"><label>Phone number <input name="phone" type="tel" placeholder="07XX XXX XXX" required /></label><label>Your town / area <input name="location" type="text" placeholder="e.g. Juja" /></label></div>
-      <label>Anything else the shop should know? <textarea name="notes" rows="3" placeholder="Preferred model, colour, budget or a question..."></textarea></label>
-      <div class="enquiry-summary" id="enquirySummary"></div>
-      <button class="button button-primary full-button" type="submit">Create enquiry message <span>↗</span></button>
-    </form>
-    <div class="copy-result" id="copyResult" hidden><strong>Your enquiry is ready.</strong><p id="copyResultText">The message has been copied.</p><button class="button button-dark full-button" id="copyAgain" type="button">Copy message again</button></div>
-    <p class="modal-fineprint">Preview only: direct WhatsApp delivery activates after the business confirms its official WhatsApp number.</p>
-  </section>
-
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script src="script.js"></script>
-</body>
-</html>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#101923">
+<meta name="description" content="Rudis Gadget World — technology retail, security and connectivity solutions. Private concept by Afrixa.">
+<title>Rudis Gadget World | Afrixa concept</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css">
+</head><body>
+<div class="demo-note"><span></span> PRIVATE CONCEPT PREVIEW · Business details and service coverage require confirmation</div>
+<header class="header"><a class="brand" href="#home"><img src="assets/rudis-gadget-world-logo.jpg" alt="Rudis Gadget World logo"><span><b>RUDIS GADGET WORLD</b><small>TECHNOLOGY · SECURITY · CONNECTIVITY</small></span></a><button class="menu" id="menu" aria-label="Open menu">☰</button><nav id="nav"><a href="#solutions">Solutions</a><a href="#products">Products</a><a href="#projects">Our work</a><a href="#about">About</a><a class="nav-cta" href="#quote">Request a quote ↗</a></nav></header>
+<main id="home">
+<section class="hero"><div class="hero-copy"><p class="kicker">TECHNOLOGY FOR HOMES & BUSINESSES</p><h1>Technology that works.<br><em>Security that protects.</em></h1><p class="lead">Explore technology products, security systems and connectivity solutions — with support for the installation projects that bring them to life.</p><div class="actions"><a class="btn primary" href="#solutions">Explore solutions <span>↗</span></a><a class="btn secondary" href="#quote">Request a quotation</a></div><div class="hero-meta"><span>01 <b>PRODUCTS</b></span><i></i><span>02 <b>INSTALLATIONS</b></span><i></i><span>03 <b>CONNECTIVITY</b></span></div></div><div class="hero-visual"><div class="hero-image"><img src="https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=1300&q=85" alt="Modern security camera installation" onerror="this.style.display='none'"><div class="image-shade"></div><div class="hero-image-label"><small>SMARTER SPACES START HERE</small><b>Connected. Protected.<br>Ready for what's next.</b></div></div><div class="floating-card"><span class="signal">●</span><div><b>Solutions for every space</b><small>Homes · Offices · Businesses</small></div></div><div class="vertical-tag">AFRIXA × RUDIS</div></div></section>
+<section class="trust-strip"><div><b>01</b><span>Technology products</span></div><div><b>02</b><span>Security solutions</span></div><div><b>03</b><span>Networking & connectivity</span></div><div><b>04</b><span>Installation enquiries</span></div></section>
+<section class="section solutions" id="solutions"><div class="section-top"><div><p class="kicker">WHAT YOU'RE LOOKING FOR</p><h2>One technology partner.<br><em>Different ways to help.</em></h2></div><p class="section-intro">Choose a solution to explore. Share what you need and the Rudis team can advise on the right products, setup and next steps.</p></div><div class="solution-grid">
+<article class="solution-card large"><img src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=1100&q=85" alt="CCTV surveillance camera" loading="lazy"><div class="card-overlay"></div><div class="card-content"><small>01 / SECURITY</small><h3>CCTV & surveillance</h3><p>Camera systems, recording equipment and installation enquiries for homes and business premises.</p><button data-service="CCTV & surveillance">Enquire about CCTV ↗</button></div></article>
+<article class="solution-card"><img src="https://images.unsplash.com/photo-1606904825846-647eb07f5ar?auto=format&fit=crop&w=900&q=85" alt="Network equipment" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=900&q=85'"><div class="card-overlay"></div><div class="card-content"><small>02 / CONNECTIVITY</small><h3>Networking & Wi-Fi</h3><p>Network equipment, coverage and setup enquiries.</p><button data-service="Networking & Wi-Fi">Explore networking ↗</button></div></article>
+<article class="solution-card"><img src="https://images.unsplash.com/photo-1614728263952-84ea256f9679?auto=format&fit=crop&w=900&q=85" alt="Satellite connectivity" loading="lazy"><div class="card-overlay"></div><div class="card-content"><small>03 / INTERNET</small><h3>Starlink & connectivity</h3><p>Ask about equipment, suitability and installation requirements.</p><button data-service="Starlink & connectivity">Ask about connectivity ↗</button></div></article>
+<article class="solution-card"><img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=900&q=85" alt="Electrician working on installation" loading="lazy"><div class="card-overlay"></div><div class="card-content"><small>04 / PERIMETER SECURITY</small><h3>Electric fencing & intercoms</h3><p>Explore perimeter protection and gate communication options.</p><button data-service="Electric fencing & intercoms">Discuss a project ↗</button></div></article>
+<article class="solution-card"><img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=900&q=85" alt="Laptop computer" loading="lazy"><div class="card-overlay"></div><div class="card-content"><small>05 / COMPUTING</small><h3>Laptops & electronics</h3><p>Ask about computers, accessories and available technology products.</p><button data-service="Laptops & electronics">Find a product ↗</button></div></article>
+</div><p class="disclaimer">Service descriptions are based on publicly visible social content and are subject to confirmation by Rudis Gadget World. Images are illustrative.</p></section>
+<section class="products section" id="products"><div class="section-top"><div><p class="kicker">PRODUCT DISCOVERY</p><h2>Find the right <em>equipment.</em></h2></div><p class="section-intro">A future catalogue can bring products from social posts into one searchable place. These are category examples, not confirmed stock.</p></div><div class="product-row"><div><span class="product-icon">◉</span><b>CCTV cameras & recorders</b><small>Camera models · DVR / NVR · accessories</small></div><div><span class="product-icon">⌁</span><b>Networking equipment</b><small>Routers · switches · cabling</small></div><div><span class="product-icon">▣</span><b>Computers & accessories</b><small>Laptops · peripherals · components</small></div><div><span class="product-icon">◎</span><b>Connectivity equipment</b><small>Starlink-related equipment · mounts</small></div></div><a class="text-link" href="#quote">Ask about a product or model ↗</a></section>
+<section class="projects section" id="projects"><div class="section-top"><div><p class="kicker">SHOW THE WORK</p><h2>Real projects build <em>confidence.</em></h2></div><p class="section-intro">Installation videos and customer-facing demonstrations already appear in Rudis's social content. A dedicated project gallery can organise that proof by solution and location.</p></div><div class="project-grid"><div class="project-feature"><img src="https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=1100&q=85" alt="Security camera on building" loading="lazy"><div><small>PROJECT GALLERY CONCEPT</small><b>CCTV installation & setup</b></div></div><div class="project-feature"><img src="https://images.unsplash.com/photo-1551703599-6b3e8379aa8b?auto=format&fit=crop&w=900&q=85" alt="Network equipment" loading="lazy"><div><small>PROJECT GALLERY CONCEPT</small><b>Networking & connectivity</b></div></div><div class="project-feature"><img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=900&q=85" alt="Technician working" loading="lazy"><div><small>PROJECT GALLERY CONCEPT</small><b>On-site technical work</b></div></div></div><p class="disclaimer">Replace these illustrative images with Rudis's own approved installation photographs and videos before launch. Do not imply these are completed Rudis projects.</p></section>
+<section class="process section" id="about"><div class="process-copy"><p class="kicker">FROM FIRST QUESTION TO PROJECT</p><h2>Make it easier to<br><em>take the next step.</em></h2><p>Customers may know what they want to solve without knowing which equipment or setup is right. A guided enquiry helps the team understand the need before recommending a solution.</p></div><div class="steps"><div><b>01</b><span><strong>Choose a solution</strong><small>CCTV, networking, connectivity, computing or another need.</small></span></div><div><b>02</b><span><strong>Describe the requirement</strong><small>Share location, property type, project details or preferred product.</small></span></div><div><b>03</b><span><strong>Receive a follow-up</strong><small>Rudis can confirm availability, arrange assessment or prepare a quotation.</small></span></div></div></section>
+<section class="quote-section" id="quote"><div class="quote-panel"><div class="quote-copy"><p class="kicker">LET'S UNDERSTAND WHAT YOU NEED</p><h2>Tell us about<br><em>your project.</em></h2><p>Request information about a product, installation or connectivity solution. This demo prepares an enquiry message; final contact routing will be confirmed with the business.</p><div class="quote-contact"><span>BUSINESS LOCATION</span><b>Oloo Street, Eldoret, Kenya</b><small>Public business listing — confirm current shop details before visiting.</small></div></div><form id="quoteForm"><label>What do you need?<select name="service" id="service" required><option value="">Choose a solution</option><option>CCTV & surveillance</option><option>Networking & Wi-Fi</option><option>Starlink & connectivity</option><option>Electric fencing & intercoms</option><option>Laptops & electronics</option><option>Other / not sure yet</option></select></label><div class="form-two"><label>Your name<input name="name" placeholder="Your name" required></label><label>Phone number<input name="phone" type="tel" placeholder="07XX XXX XXX" required></label></div><label>Your location<input name="location" placeholder="Town / estate / area"></label><label>Tell us a little more<textarea name="details" rows="4" placeholder="For example: 4-camera CCTV setup for a small shop..."></textarea></label><button class="btn primary submit" type="submit">Prepare enquiry ↗</button><small class="form-note">No payment is collected. Stock, pricing, service coverage and appointment availability must be confirmed directly.</small><p class="form-status" id="formStatus" aria-live="polite"></p></form></div></section>
+</main><footer><div class="footer-brand"><img src="assets/rudis-gadget-world-logo.jpg" alt=""><span><b>RUDIS GADGET WORLD</b><small>TECHNOLOGY · SECURITY · CONNECTIVITY</small></span></div><p>A technology and installation business website concept by <b>AFRIXA</b>.</p><small>Private demonstration · Not an official live Rudis website</small></footer>
+<script src="script.js"></script></body></html>
